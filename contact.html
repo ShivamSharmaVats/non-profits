@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | HDDF</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><img src="assets/images/hddf-logo.svg" alt="HDDF logo" /><span>HDDF</span></a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="problem.html">The Problem</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a class="active" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <p class="tag">Contact Us</p>
+    <h1>Let’s Build the High Desert Digital Future Together</h1>
+
+    <div class="contact-grid">
+      <article class="card">
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong> hello@hddf.org</p>
+        <p><strong>Phone:</strong> (760) 555-0148</p>
+        <p><strong>Address:</strong> 1450 Desert Tech Way, Victorville, CA 92392</p>
+        <p><strong>Hours:</strong> Mon-Fri, 9:00 AM - 5:00 PM</p>
+      </article>
+
+      <article class="card">
+        <h2>Ask a Question</h2>
+        <form>
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="topic">Topic</label>
+          <input id="topic" name="topic" type="text" placeholder="Donation, classes, volunteering..." required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button class="button button-primary" type="submit">Send Message</button>
+        </form>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <strong>HDDF: High Desert Digital Future</strong><br />
+      Skills today. Income tomorrow.
+    </div>
+  </footer>
+</body>
+</html>
