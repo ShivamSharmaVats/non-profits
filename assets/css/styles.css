@@ -296,6 +296,47 @@ footer {
   }
 }
 
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  filter: blur(4px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease,
+    filter 0.7s ease;
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform, filter;
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.scroll-reveal.text-rise {
+  transform: translateY(22px);
+}
+
+.scroll-reveal.card-rise {
+  transform: translateY(34px) scale(0.985);
+}
+
+.scroll-reveal.card-rise.is-visible {
+  transform: translateY(0) scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .scroll-reveal {
+    animation: none;
+    transition: none;
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
 @media (max-width: 930px) {
   .hero,
   .contact-grid,
@@ -358,10 +399,10 @@ footer {
 }
 
 .impact-shot-compact img {
-  height: 150px;
+  height: 180px;
   object-fit: contain;
   background: linear-gradient(145deg, #f8f3e8, #ffffff);
-  padding: 0.6rem;
+  padding: 0.75rem;
 }
 
 .impact-shot-compact p {
@@ -386,11 +427,12 @@ footer {
 
 .merch-item img {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+  height: 360px;
+  object-fit: contain;
   border-radius: 14px;
   margin-bottom: 0.9rem;
-  background: #f5f1e8;
+  background: linear-gradient(145deg, #f5f1e8, #ffffff);
+  padding: 0.6rem;
 }
 
 .merch-item h3 {
