@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HDDF | High Desert Digital Future</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/hddf-logo-circle.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -115,18 +116,21 @@
           <h3>HDDF Impact T-Shirt</h3>
           <p>Soft cotton tee featuring the HDDF logo and our mission slogan.</p>
           <span class="price">$24</span>
+          <button class="button button-primary merch-buy" type="button" data-product="HDDF Impact T-Shirt" data-price="$24">Buy Now</button>
         </article>
         <article class="merch-item">
           <img src="assets/images/download-5.png" alt="Community hoodie merch item" />
           <h3>Community Hoodie</h3>
           <p>Warm hoodie that supports laptop refurbishment and workshop supplies.</p>
           <span class="price">$45</span>
+          <button class="button button-primary merch-buy" type="button" data-product="Community Hoodie" data-price="$45">Buy Now</button>
         </article>
         <article class="merch-item">
           <img src="assets/images/download-6.png" alt="Digital Future tote bag merch item" />
           <h3>Digital Future Tote</h3>
           <p>Reusable tote bag made for students carrying notebooks and devices.</p>
           <span class="price">$18</span>
+          <button class="button button-primary merch-buy" type="button" data-product="Digital Future Tote" data-price="$18">Buy Now</button>
         </article>
       </div>
     </section>
@@ -148,6 +152,43 @@
       Skills today. Income tomorrow.
     </div>
   </footer>
+  <div class="checkout-overlay" id="checkout-overlay" hidden>
+    <section class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+      <button class="checkout-close" id="checkout-close" type="button" aria-label="Close checkout">×</button>
+      <p class="tag">Secure Checkout</p>
+      <h2 id="checkout-title">Complete Your Purchase</h2>
+      <p class="checkout-item">Item: <strong id="checkout-product">HDDF Impact T-Shirt</strong> <span id="checkout-price">$24</span></p>
+      <form id="checkout-form" class="checkout-form">
+        <label for="checkout-name">Cardholder Name</label>
+        <input id="checkout-name" name="name" type="text" placeholder="Full Name" required />
+
+        <label for="checkout-email">Email</label>
+        <input id="checkout-email" name="email" type="email" placeholder="you@example.com" required />
+
+        <label for="checkout-card">Card Number</label>
+        <input id="checkout-card" name="card" type="text" inputmode="numeric" placeholder="1234 5678 9012 3456" maxlength="19" required />
+
+        <div class="checkout-row">
+          <div>
+            <label for="checkout-exp">Expiry</label>
+            <input id="checkout-exp" name="exp" type="text" placeholder="MM/YY" maxlength="5" required />
+          </div>
+          <div>
+            <label for="checkout-cvc">CVC</label>
+            <input id="checkout-cvc" name="cvc" type="text" inputmode="numeric" placeholder="123" maxlength="4" required />
+          </div>
+          <div>
+            <label for="checkout-zip">ZIP</label>
+            <input id="checkout-zip" name="zip" type="text" inputmode="numeric" placeholder="92392" maxlength="10" required />
+          </div>
+        </div>
+
+        <button class="button button-primary" type="submit">Pay Now</button>
+        <p class="checkout-note">Demo payment wall only. Connect Stripe or another gateway before taking real payments.</p>
+      </form>
+    </section>
+  </div>
   <script src="assets/js/scroll-reveal.js"></script>
+  <script src="assets/js/merch-checkout.js"></script>
 </body>
 </html>
