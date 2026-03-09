@@ -40,7 +40,7 @@
           <li>Support fundraising events across the High Desert</li>
           <li>Help us apply for grants and corporate technology funds</li>
         </ul>
-        <a class="button button-primary" href="contact.html">Donate or Sponsor</a>
+        <button class="button button-primary custom-donation-open" type="button">Donate or Sponsor</button>
       </article>
 
       <article class="card">
@@ -50,7 +50,7 @@
           <li>Coach resumes, freelancing profiles, and job applications</li>
           <li>Mentor participants for 4-week career support cycles</li>
         </ul>
-        <a class="button button-secondary" href="contact.html">Volunteer With HDDF</a>
+        <button class="button button-secondary" type="button" id="open-volunteer-form">Volunteer With HDDF</button>
       </article>
     </div>
 
@@ -79,9 +79,64 @@
     </section>
 
     <section class="section">
+      <h2>HDDF Merch</h2>
+      <div class="merch-grid">
+        <article class="merch-item">
+          <img src="assets/images/download-4.png" alt="HDDF Impact T-Shirt merch item" />
+          <h3>HDDF Impact T-Shirt</h3>
+          <p>Soft cotton tee featuring the HDDF logo and our mission slogan.</p>
+          <span class="price">$24</span>
+          <button class="button button-primary merch-buy" type="button" data-product="HDDF Impact T-Shirt" data-price="$24">Buy Now</button>
+        </article>
+        <article class="merch-item">
+          <img src="assets/images/download-5.png" alt="Community hoodie merch item" />
+          <h3>Community Hoodie</h3>
+          <p>Warm hoodie that supports laptop refurbishment and workshop supplies.</p>
+          <span class="price">$45</span>
+          <button class="button button-primary merch-buy" type="button" data-product="Community Hoodie" data-price="$45">Buy Now</button>
+        </article>
+        <article class="merch-item">
+          <img src="assets/images/download-6.png" alt="Digital Future tote bag merch item" />
+          <h3>Digital Future Tote</h3>
+          <p>Reusable tote bag made for students carrying notebooks and devices.</p>
+          <span class="price">$18</span>
+          <button class="button button-primary merch-buy" type="button" data-product="Digital Future Tote" data-price="$18">Buy Now</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
       <h2>Strong Call to Action</h2>
       <article class="card">
         <p><strong>Act now:</strong> Donate a laptop, fund a training seat, or mentor one student this month. One action from you can change one family’s future income story.</p>
+      </article>
+    </section>
+
+    <section class="section" id="volunteer-form" hidden>
+      <h2>Volunteer Sign-Up Form</h2>
+      <article class="card">
+        <form>
+          <label for="vol-name">Full Name</label>
+          <input id="vol-name" name="vol_name" type="text" required />
+
+          <label for="vol-email">Email</label>
+          <input id="vol-email" name="vol_email" type="email" required />
+
+          <label for="vol-phone">Phone Number</label>
+          <input id="vol-phone" name="vol_phone" type="tel" required />
+
+          <label for="vol-role">How would you like to volunteer?</label>
+          <input id="vol-role" name="vol_role" type="text" placeholder="Teaching, mentoring, resume coaching..." required />
+
+          <label for="vol-availability">Availability</label>
+          <input id="vol-availability" name="vol_availability" type="text" placeholder="Weekdays evenings, Saturdays..." required />
+
+          <label for="vol-notes">Short Message</label>
+          <textarea id="vol-notes" name="vol_notes" placeholder="Tell us about your experience and how you'd like to help." required></textarea>
+
+          <button class="button button-primary" type="submit">Submit Volunteer Form</button>
+          <button class="button button-secondary" type="button" id="hide-volunteer-form">Hide Form</button>
+        </form>
       </article>
     </section>
   </main>
@@ -92,6 +147,78 @@
       Skills today. Income tomorrow.
     </div>
   </footer>
+  <div class="checkout-overlay" id="custom-donation-overlay" hidden>
+    <section class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="custom-donation-title">
+      <button class="checkout-close" id="custom-donation-close" type="button" aria-label="Close custom donation overview">×</button>
+      <p class="tag">Custom Donation Overview</p>
+      <h2 id="custom-donation-title">Choose Your Impact</h2>
+      <p>Your custom donation helps fund lessons, laptop access, and mentorship support for students and families.</p>
+
+      <div class="donation-overview-grid">
+        <article class="donation-overview-card">
+          <h3>Starter Impact</h3>
+          <p>Helps cover one digital-skills session.</p>
+          <button class="button button-secondary donation-preset" type="button" data-amount="50">$50</button>
+        </article>
+        <article class="donation-overview-card">
+          <h3>Growth Impact</h3>
+          <p>Supports multiple sessions plus coaching time.</p>
+          <button class="button button-secondary donation-preset" type="button" data-amount="150">$150</button>
+        </article>
+        <article class="donation-overview-card">
+          <h3>Laptop Impact</h3>
+          <p>Contributes toward device refurbishing and setup.</p>
+          <button class="button button-secondary donation-preset" type="button" data-amount="300">$300</button>
+        </article>
+      </div>
+
+      <form id="custom-donation-form" class="donation-custom-form">
+        <label for="overview-custom-amount">Or enter a custom donation amount (USD)</label>
+        <input id="overview-custom-amount" name="overview_custom_amount" type="number" min="1" step="1" placeholder="Enter amount" required />
+        <p class="checkout-item">Selected Donation: <strong id="overview-selected-amount">$100</strong></p>
+        <button class="button button-primary" type="submit">Continue to Billing</button>
+      </form>
+    </section>
+  </div>
+  <div class="checkout-overlay" id="checkout-overlay" hidden>
+    <section class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+      <button class="checkout-close" id="checkout-close" type="button" aria-label="Close checkout">×</button>
+      <p class="tag">Secure Checkout</p>
+      <h2 id="checkout-title">Complete Your Purchase</h2>
+      <p class="checkout-item">Item: <strong id="checkout-product">HDDF Impact T-Shirt</strong> <span id="checkout-price">$24</span></p>
+      <form id="checkout-form" class="checkout-form">
+        <label for="checkout-name">Cardholder Name</label>
+        <input id="checkout-name" name="name" type="text" placeholder="Full Name" required />
+
+        <label for="checkout-email">Email</label>
+        <input id="checkout-email" name="email" type="email" placeholder="you@example.com" required />
+
+        <label for="checkout-card">Card Number</label>
+        <input id="checkout-card" name="card" type="text" inputmode="numeric" placeholder="1234 5678 9012 3456" maxlength="19" required />
+
+        <div class="checkout-row">
+          <div>
+            <label for="checkout-exp">Expiry</label>
+            <input id="checkout-exp" name="exp" type="text" placeholder="MM/YY" maxlength="5" required />
+          </div>
+          <div>
+            <label for="checkout-cvc">CVC</label>
+            <input id="checkout-cvc" name="cvc" type="text" inputmode="numeric" placeholder="123" maxlength="4" required />
+          </div>
+          <div>
+            <label for="checkout-zip">ZIP</label>
+            <input id="checkout-zip" name="zip" type="text" inputmode="numeric" placeholder="92392" maxlength="10" required />
+          </div>
+        </div>
+
+        <button class="button button-primary" type="submit">Pay Now</button>
+        <p class="checkout-note">Demo payment wall only. Connect Stripe or another gateway before taking real payments.</p>
+      </form>
+    </section>
+  </div>
   <script src="assets/js/scroll-reveal.js"></script>
+  <script src="assets/js/merch-checkout.js"></script>
+  <script src="assets/js/custom-donation-overview.js"></script>
+  <script src="assets/js/volunteer-form-toggle.js"></script>
 </body>
 </html>

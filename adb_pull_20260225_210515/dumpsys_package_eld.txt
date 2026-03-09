@@ -1,0 +1,480 @@
+Activity Resolver Table:
+  Schemes:
+      ttmkonnectbind:
+        ca4f945 com.ttmkonnect.eld/.MainActivity filter 923d5cb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "ttmkonnectbind"
+          Scheme: "exp+ttmkonnectbind"
+      exp+ttmkonnectbind:
+        ca4f945 com.ttmkonnect.eld/.MainActivity filter 923d5cb
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "ttmkonnectbind"
+          Scheme: "exp+ttmkonnectbind"
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        ca4f945 com.ttmkonnect.eld/.MainActivity filter 68f589a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.QUICKBOOT_POWERON:
+        6b860f2 com.ttmkonnect.eld/expo.modules.notifications.service.NotificationsService filter 7373343
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "expo.modules.notifications.NOTIFICATION_EVENT"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.REBOOT"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.htc.intent.action.QUICKBOOT_POWERON:
+        6b860f2 com.ttmkonnect.eld/expo.modules.notifications.service.NotificationsService filter 7373343
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "expo.modules.notifications.NOTIFICATION_EVENT"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.REBOOT"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        2679a3e com.ttmkonnect.eld/androidx.profileinstaller.ProfileInstallReceiver filter fcfbdb5
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        d00a054 com.ttmkonnect.eld/com.freshchat.consumer.sdk.receiver.FreshchatNetworkChangeReceiver filter f160bfd
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      expo.modules.taskManager.TaskBroadcastReceiver.INTENT_ACTION:
+        56811a8 com.ttmkonnect.eld/expo.modules.taskManager.TaskBroadcastReceiver filter 2a0e4c1
+          Action: "expo.modules.taskManager.TaskBroadcastReceiver.INTENT_ACTION"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      expo.modules.notifications.NOTIFICATION_EVENT:
+        6b860f2 com.ttmkonnect.eld/expo.modules.notifications.service.NotificationsService filter 7373343
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "expo.modules.notifications.NOTIFICATION_EVENT"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.REBOOT"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.LOCALE_CHANGED:
+        27a6466 com.ttmkonnect.eld/com.freshchat.consumer.sdk.receiver.FreshchatReceiver filter 59803a7
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        2679a3e com.ttmkonnect.eld/androidx.profileinstaller.ProfileInstallReceiver filter 10fc09f
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        cf16dc0 com.ttmkonnect.eld/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 4bc6af9
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        2679a3e com.ttmkonnect.eld/androidx.profileinstaller.ProfileInstallReceiver filter a5fa5ec
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        2679a3e com.ttmkonnect.eld/androidx.profileinstaller.ProfileInstallReceiver filter 63f1c4a
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        56811a8 com.ttmkonnect.eld/expo.modules.taskManager.TaskBroadcastReceiver filter 2a0e4c1
+          Action: "expo.modules.taskManager.TaskBroadcastReceiver.INTENT_ACTION"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        27a6466 com.ttmkonnect.eld/com.freshchat.consumer.sdk.receiver.FreshchatReceiver filter 59803a7
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        6b860f2 com.ttmkonnect.eld/expo.modules.notifications.service.NotificationsService filter 7373343
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "expo.modules.notifications.NOTIFICATION_EVENT"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.REBOOT"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.MY_PACKAGE_REPLACED:
+        56811a8 com.ttmkonnect.eld/expo.modules.taskManager.TaskBroadcastReceiver filter 2a0e4c1
+          Action: "expo.modules.taskManager.TaskBroadcastReceiver.INTENT_ACTION"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        27a6466 com.ttmkonnect.eld/com.freshchat.consumer.sdk.receiver.FreshchatReceiver filter 59803a7
+          Action: "android.intent.action.LOCALE_CHANGED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+        6b860f2 com.ttmkonnect.eld/expo.modules.notifications.service.NotificationsService filter 7373343
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "expo.modules.notifications.NOTIFICATION_EVENT"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.REBOOT"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.intent.action.REBOOT:
+        6b860f2 com.ttmkonnect.eld/expo.modules.notifications.service.NotificationsService filter 7373343
+          Action: "android.intent.action.QUICKBOOT_POWERON"
+          Action: "com.htc.intent.action.QUICKBOOT_POWERON"
+          Action: "expo.modules.notifications.NOTIFICATION_EVENT"
+          Action: "android.intent.action.BOOT_COMPLETED"
+          Action: "android.intent.action.MY_PACKAGE_REPLACED"
+          Action: "android.intent.action.REBOOT"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        a8b8031 com.ttmkonnect.eld/expo.modules.notifications.service.ExpoFirebaseMessagingService filter 55ab316
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-1, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+        3332497 com.ttmkonnect.eld/com.google.firebase.messaging.FirebaseMessagingService filter 5b6c684
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      com.google.android.gms.metadata.MODULE_DEPENDENCIES:
+        eb9c7bb com.ttmkonnect.eld/com.google.android.gms.metadata.ModuleDependencies filter 59734d8
+          Action: "com.google.android.gms.metadata.MODULE_DEPENDENCIES"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.ttmkonnect.eld.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (63252d3):
+    sourcePackage=com.ttmkonnect.eld
+    uid=10403 gids=[] type=0 prot=signature
+    perm=PermissionInfo{adbbe10 com.ttmkonnect.eld.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.ttmkonnect.eld/com.canhub.cropper.CropFileProvider:
+    Provider{3d8fd09 com.ttmkonnect.eld/com.canhub.cropper.CropFileProvider}
+  com.ttmkonnect.eld/com.freshchat.consumer.sdk.provider.FreshchatInitProvider:
+    Provider{e72ab0e com.ttmkonnect.eld/com.freshchat.consumer.sdk.provider.FreshchatInitProvider}
+  com.ttmkonnect.eld/androidx.startup.InitializationProvider:
+    Provider{1c5492f com.ttmkonnect.eld/androidx.startup.InitializationProvider}
+  com.ttmkonnect.eld/com.reactnativecommunity.webview.RNCWebViewFileProvider:
+    Provider{6a6ab3c com.ttmkonnect.eld/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+  com.ttmkonnect.eld/expo.modules.sharing.SharingFileProvider:
+    Provider{98b60c5 com.ttmkonnect.eld/expo.modules.sharing.SharingFileProvider}
+  com.ttmkonnect.eld/com.ReactNativeBlobUtil.Utils.FileProvider:
+    Provider{5326a1a com.ttmkonnect.eld/com.ReactNativeBlobUtil.Utils.FileProvider}
+  com.ttmkonnect.eld/io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider:
+    Provider{ce7494b com.ttmkonnect.eld/io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider}
+  com.ttmkonnect.eld/expo.modules.filesystem.FileSystemFileProvider:
+    Provider{1d13f28 com.ttmkonnect.eld/expo.modules.filesystem.FileSystemFileProvider}
+  com.ttmkonnect.eld/com.squareup.picasso.PicassoProvider:
+    Provider{8464441 com.ttmkonnect.eld/com.squareup.picasso.PicassoProvider}
+  com.ttmkonnect.eld/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{9fd0de6 com.ttmkonnect.eld/com.google.firebase.provider.FirebaseInitProvider}
+  com.ttmkonnect.eld/expo.modules.imagepicker.fileprovider.ImagePickerFileProvider:
+    Provider{df2f27 com.ttmkonnect.eld/expo.modules.imagepicker.fileprovider.ImagePickerFileProvider}
+
+ContentProvider Authorities:
+  [com.ttmkonnect.eld.reactnativefirebaseappinitprovider]:
+    Provider{ce7494b com.ttmkonnect.eld/io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider}
+      applicationInfo=ApplicationInfo{e8f25d4 com.ttmkonnect.eld}
+  [com.ttmkonnect.eld.firebaseinitprovider]:
+    Provider{9fd0de6 com.ttmkonnect.eld/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{671e37d com.ttmkonnect.eld}
+  [com.ttmkonnect.eld.fileprovider]:
+    Provider{6a6ab3c com.ttmkonnect.eld/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+      applicationInfo=ApplicationInfo{17c2272 com.ttmkonnect.eld}
+  [com.ttmkonnect.eld.FileSystemFileProvider]:
+    Provider{1d13f28 com.ttmkonnect.eld/expo.modules.filesystem.FileSystemFileProvider}
+      applicationInfo=ApplicationInfo{a8596c3 com.ttmkonnect.eld}
+  [com.ttmkonnect.eld.SharingFileProvider]:
+    Provider{98b60c5 com.ttmkonnect.eld/expo.modules.sharing.SharingFileProvider}
+      applicationInfo=ApplicationInfo{ca2cb40 com.ttmkonnect.eld}
+  [com.ttmkonnect.eld.cropper.fileprovider]:
+    Provider{3d8fd09 com.ttmkonnect.eld/com.canhub.cropper.CropFileProvider}
+      applicationInfo=ApplicationInfo{ebe3a79 com.ttmkonnect.eld}
+  [com.ttmkonnect.eld.ImagePickerFileProvider]:
+    Provider{df2f27 com.ttmkonnect.eld/expo.modules.imagepicker.fileprovider.ImagePickerFileProvider}
+      applicationInfo=ApplicationInfo{f65f3be com.ttmkonnect.eld}
+  [com.ttmkonnect.eld.com.squareup.picasso]:
+    Provider{8464441 com.ttmkonnect.eld/com.squareup.picasso.PicassoProvider}
+      applicationInfo=ApplicationInfo{1a0dc1f com.ttmkonnect.eld}
+  [com.ttmkonnect.eld.provider]:
+    Provider{5326a1a com.ttmkonnect.eld/com.ReactNativeBlobUtil.Utils.FileProvider}
+      applicationInfo=ApplicationInfo{3895b6c com.ttmkonnect.eld}
+  [com.ttmkonnect.eld.androidx-startup]:
+    Provider{1c5492f com.ttmkonnect.eld/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{cdf0535 com.ttmkonnect.eld}
+  [com.ttmkonnect.eld.freshchat.initprovider]:
+    Provider{e72ab0e com.ttmkonnect.eld/com.freshchat.consumer.sdk.provider.FreshchatInitProvider}
+      applicationInfo=ApplicationInfo{a898dca com.ttmkonnect.eld}
+
+Key Set Manager:
+  [com.ttmkonnect.eld]
+      Signing KeySets: 134
+
+Packages:
+  Package [com.ttmkonnect.eld] (a011b3b):
+    appId=10403
+    pkg=Package{366c258 com.ttmkonnect.eld}
+    codePath=/data/app/~~AczZVRgyf0fRuOL0AkUf9w==/com.ttmkonnect.eld-DavuF_JVKdvt4oxkPTPyFw==
+    resourcePath=/data/app/~~AczZVRgyf0fRuOL0AkUf9w==/com.ttmkonnect.eld-DavuF_JVKdvt4oxkPTPyFw==
+    legacyNativeLibraryDir=/data/app/~~AczZVRgyf0fRuOL0AkUf9w==/com.ttmkonnect.eld-DavuF_JVKdvt4oxkPTPyFw==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=38 minSdk=24 targetSdk=35
+    minExtensionVersions=[]
+    versionName=1.0.13
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=org.chromium.intent.action.PAY }, Intent { act=org.chromium.intent.action.IS_READY_TO_PAY }, Intent { act=org.chromium.intent.action.UPDATE_PAYMENT_DETAILS }, Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.media.action.ACTION_VIDEO_CAPTURE }, Intent { act=android.intent.action.GET_CONTENT cat=[android.intent.category.OPENABLE] dat=content://*/... typ=*/* }, Intent { act=android.intent.action.OPEN_DOCUMENT_TREE }, Intent { act=android.intent.action.SEND dat=content://*/... typ=*/* }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      android.ext.adservices
+    timeStamp=2026-02-24 06:39:47
+    lastUpdateTime=2026-02-24 06:39:51
+    installerPackageName=com.google.android.packageinstaller
+    installerPackageUid=10065
+    initiatingPackageName=com.google.android.packageinstaller
+    originatingPackageName=com.whatsapp
+    category=manifest: -1, override: -1, by user: -1
+    packageSource=3
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{a07bfb1 version:2, signatures:[d50d5a35], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    componentsDeclared=44
+    declared permissions:
+      com.ttmkonnect.eld.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      com.sonyericsson.home.permission.BROADCAST_BADGE
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.SYSTEM_ALERT_WINDOW
+      com.oppo.launcher.permission.WRITE_SETTINGS
+      me.everything.badger.permission.BADGE_COUNT_READ
+      com.anddoes.launcher.permission.UPDATE_COUNT
+      com.sec.android.provider.badge.permission.READ
+      android.permission.FOREGROUND_SERVICE
+      me.everything.badger.permission.BADGE_COUNT_WRITE
+      com.huawei.android.launcher.permission.WRITE_SETTINGS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.ACCESS_ADSERVICES_AD_ID
+      android.permission.FOREGROUND_SERVICE_LOCATION
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_APP_BADGE
+      com.majeur.launcher.permission.UPDATE_BADGE
+      android.permission.ACCESS_NETWORK_STATE
+      com.oppo.launcher.permission.READ_SETTINGS
+      android.permission.CAMERA
+      com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+      com.huawei.android.launcher.permission.READ_SETTINGS
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+      android.permission.USE_FINGERPRINT
+      com.sec.android.provider.badge.permission.WRITE
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      com.huawei.android.launcher.permission.CHANGE_BADGE
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.USE_BIOMETRIC
+      com.ttmkonnect.eld.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      com.htc.launcher.permission.UPDATE_SHORTCUT
+      com.google.android.gms.permission.AD_ID
+      com.htc.launcher.permission.READ_SETTINGS
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_BACKGROUND_LOCATION
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.sec.android.provider.badge.permission.READ: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.ACCESS_ADSERVICES_AD_ID: granted=true
+      android.permission.FOREGROUND_SERVICE_LOCATION: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.ACCESS_ADSERVICES_ATTRIBUTION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.ttmkonnect.eld.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=111853 deDataInode=125408 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=4
+      dataDir=/data/user/0/com.ttmkonnect.eld
+      firstInstallTime=2026-02-24 06:39:51
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk
+      legacy overlay paths:
+        /product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk
+      lastDisabledCaller: com.google.android.packageinstaller
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|524288]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_ADVERTISE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.whatsapp:
+      com.ttmkonnect.eld
+    us.zoom.videomeetings:
+      com.ttmkonnect.eld
+    com.google.android.as.oss:
+      com.ttmkonnect.eld
+    com.google.android.apps.messaging:
+      com.ttmkonnect.eld
+    com.microsoft.office.outlook:
+      com.ttmkonnect.eld
+    com.ttmkonnect.eld:
+      com.whatsapp
+      com.google.android.documentsui
+      us.zoom.videomeetings
+      com.microsoft.skydrive
+      com.samsung.android.app.contacts
+      com.microsoft.appmanager
+      com.google.android.apps.messaging
+      com.google.android.googlequicksearchbox
+      com.android.chrome
+      com.google.android.apps.maps
+      com.google.android.youtube
+      com.google.android.gm
+      com.google.android.setupwizard
+      com.samsung.android.galaxycontinuity
+      com.samsung.android.game.gamehome
+      com.samsung.android.calendar
+      com.google.android.apps.docs
+      com.microsoft.office.officehubrow
+      com.google.android.apps.photos
+      com.microsoft.office.outlook
+      com.samsung.android.app.notes
+      com.google.android.photopicker
+      com.google.android.apps.bard
+      com.bizlog.triplog
+  queryable via interaction:
+    User 0:
+      [com.samsung.carrier.logcollector,com.android.keychain,com.sec.android.app.personalization,com.samsung.android.forest,com.android.settings,android,com.qti.snapdragon.qdcm_ff,com.android.location.fused,com.samsung.android.app.omcagent,com.samsung.sdm,com.sec.android.app.applinker,com.samsung.SMT,com.samsung.android.stickercenter,com.android.localtransport,com.samsung.android.da.daagent,com.sec.android.app.quicktool,com.samsung.android.dqagent,com.sec.android.app.SecSetupWizard,com.samsung.InputEventApp,com.sec.app.RilErrorNotifier,com.sec.automation,com.samsung.android.secondconnection,com.samsung.android.themecenter,com.sec.android.emergencylauncher,com.sec.android.diagmonagent,com.samsung.android.bbc.bbcagent,com.sec.android.app.factorykeystring,com.sec.bcservice,com.android.inputdevices,com.samsung.aasaservice,com.skms.android.agent,com.sec.android.sdhms,com.android.providers.settings,com.samsung.android.emergency,com.samsung.android.fmm,com.sec.android.app.RilPhoneNumberService,com.sec.mhs.smarttethering,com.samsung.android.app.dressroom,com.samsung.sait.sohservice,com.sec.imsservice,com.sec.sve,com.samsung.accessibility,com.samsung.android.lool,com.sec.android.app.camerasaver,com.factory.mmigroup,com.samsung.android.smartswitchassistant,com.sec.android.app.setupwizard,com.sec.imslogger,com.sec.android.soagent,com.sec.android.iaft,com.sec.android.app.servicemodeapp,com.sem.factoryapp,com.samsung.android.biometrics.app.setting,com.wssyncmldm,com.samsung.android.knox.attestation,com.android.server.telecom,com.sec.usbsettings,com.sec.android.app.parser,com.android.dynsystem,com.samsung.android.mdecservice,com.sec.modem.settings,com.samsung.android.simagent]:
+        com.ttmkonnect.eld
+      com.samsung.android.honeyboard:
+        com.ttmkonnect.eld
+      [com.google.android.gms,com.google.android.gsf]:
+        com.ttmkonnect.eld
+      com.ttmkonnect.eld:
+        com.google.android.webview
+  queryable via uses-library:
+
+Dexopt state:
+  [com.ttmkonnect.eld]
+    path: /data/app/~~AczZVRgyf0fRuOL0AkUf9w==/com.ttmkonnect.eld-DavuF_JVKdvt4oxkPTPyFw==/base.apk
+      arm64: [status=verify] [reason=install] [primary-abi]
+        [location is /data/app/~~AczZVRgyf0fRuOL0AkUf9w==/com.ttmkonnect.eld-DavuF_JVKdvt4oxkPTPyFw==/oat/arm64/base.odex]
+
+SPEG state:
+  Event #1: 24-02-2026 06:39:56.380 Success com.ttmkonnect.eld took 2669 ms
+  Event #0: 21-02-2026 08:16:34.529 Success com.ttmkonnect.eld took 2621 ms
+
+Profile utilization state:
+  Current state:
+    Version: 2.1.1
+    Start reason: boot-no-update
+    Start time: not started
+    Finish time: not finished
+    PU_StatusWatcher:
+      Initial thermal status: 0
+      Thermal status: 0
+      Screen off: false
+      Low battery: true
+    PU_DexoptTrigger:
+      Dexopt concurrency: 4
+      Dexopting: false
+    PU_Storage:
+      Stored apps:
+        com.whatsapp 27
+        com.android.settings 32
+        com.android.chrome 34
+        us.zoom.videomeetings 45
+        com.google.android.gm 65
+        com.google.android.googlequicksearchbox 67
+        com.samsung.android.messaging 72
+        com.google.android.apps.tachyon 73
+        com.mobiledatalabs.mileiq 75
+        com.google.android.apps.messaging 78
+        com.samsung.android.app.contacts 78
+        com.android.vending 79
+        com.bizlog.triplog 85
+        com.samsung.android.dialer 91
+        com.sec.android.easyMover 91
+        com.samsung.android.app.notes 93
+        com.microsoft.office.outlook 100
+    Stored PU state:
+      Service:
+        Version: 1.0
+        Start reason: boot-after-ota
+        Start time: Tue Nov 04 07:44:52 PST 2025 ts=1762271092887
+        Finish time: Tue Nov 04 10:25:03 PST 2025 ts=1762280703497
+        Took time 9610sec
+      Watcher:
+        Initial thermal status: 0
+        Thermal status: 0
+        Screen off: true
+        Low battery: false
+      Trigger:
+        Dexopt concurrency: 4
+        Dexopting: false
+        Hot apps list:
+          com.google.android.googlequicksearchbox, w=46, s=OPTIMIZED, optTimeMs=1762280400096, cancelCount=0, dexopt=20, dex2oatTimeMs=66608, filter=speed-profile, dex2oatTimeMs=37554, filter=speed-profile
+          com.google.android.gm, w=48, s=OPTIMIZED, optTimeMs=1762278479420, cancelCount=0, dexopt=20, dex2oatTimeMs=66729, filter=speed-profile
+          com.google.android.apps.tachyon, w=49, s=OPTIMIZED, optTimeMs=1762277710295, cancelCount=0, dexopt=20, dex2oatTimeMs=28456, filter=speed-profile
+          com.google.android.apps.photos, w=58, s=OPTIMIZED, optTimeMs=1762277713614, cancelCount=0, dexopt=20, dex2oatTimeMs=31862, filter=speed-profile
+          com.android.vending, w=59, s=OPTIMIZED, optTimeMs=1762278778405, cancelCount=0, dexopt=30, dex2oatTimeMs=42331, filter=speed-profile, dex2oatTimeMs=0, filter=verify, dex2oatTimeMs=0, filter=verify, dex2oatTimeMs=0, filter=verify
+          com.google.android.apps.messaging, w=59, s=OPTIMIZED, optTimeMs=1762278778123, cancelCount=0, dexopt=20, dex2oatTimeMs=38926, filter=speed-profile
+          com.android.settings, w=64, s=OPTIMIZED, optTimeMs=1762278777275, cancelCount=0, dexopt=20, dex2oatTimeMs=3161, filter=speed-profile
+          com.knighteld.android, w=68, s=OPTIMIZED, optTimeMs=1762279389902, cancelCount=0, dexopt=20, dex2oatTimeMs=15025, filter=speed-profile
+          com.sec.android.app.camera, w=70, s=OPTIMIZED, optTimeMs=1762278778210, cancelCount=0, dexopt=10, dex2oatTimeMs=0, filter=speed-profile
+          com.sec.android.easyMover, w=71, s=OPTIMIZED, optTimeMs=1762278782373, cancelCount=0, dexopt=20, dex2oatTimeMs=4049, filter=speed-profile
+          com.samsung.android.messaging, w=74, s=OPTIMIZED, optTimeMs=1762278785360, cancelCount=0, dexopt=20, dex2oatTimeMs=6854, filter=speed-profile
+          com.samsung.android.dialer, w=76, s=OPTIMIZED, optTimeMs=1762278782455, cancelCount=0, dexopt=10, dex2oatTimeMs=0, filter=speed-profile
+          com.samsung.android.app.notes, w=78, s=OPTIMIZED, optTimeMs=1762280703495, cancelCount=0, dexopt=20, dex2oatTimeMs=22355, filter=speed-profile, dex2oatTimeMs=11056, filter=speed-profile
+          com.samsung.android.app.contacts, w=80, s=OPTIMIZED, optTimeMs=1762279244782, cancelCount=0, dexopt=20, dex2oatTimeMs=5023, filter=speed-profile
+    Stored SCPM state:
+      packages-9a07:
+        [                                            ]
+      disable-2bb4:
+        [                                            ]
+
+Compiler stats:
+  [com.ttmkonnect.eld]
+     base.apk - 1072
+
+HeimdAllFS state:
+  HeimdAllFS does not supported.

@@ -10,6 +10,11 @@
   --shadow: 0 14px 40px rgba(8, 55, 64, 0.16);
 }
 
+html {
+  font-size: clamp(15px, 0.42vw + 13px, 18px);
+  -webkit-text-size-adjust: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -23,6 +28,9 @@ body {
     radial-gradient(circle at 95% 15%, rgba(14, 85, 97, 0.16), transparent 35%),
     var(--sand);
   line-height: 1.6;
+  overflow-x: hidden;
+  word-break: normal;
+  overflow-wrap: anywhere;
 }
 
 a {
@@ -83,9 +91,14 @@ nav ul {
   margin: 0;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
   padding: 0.35rem 0.65rem;
   border-radius: 999px;
   transition: background 0.2s ease, color 0.2s ease;
@@ -136,6 +149,7 @@ nav a.active {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-height: 44px;
   padding: 0.78rem 1.1rem;
   border-radius: 12px;
   font-weight: 700;
@@ -357,6 +371,31 @@ nav a.active {
   gap: 0.7rem;
 }
 
+.donation-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+  margin: 0.9rem 0;
+}
+
+.donation-overview-card {
+  border: 1px solid rgba(14, 85, 97, 0.18);
+  border-radius: 12px;
+  background: linear-gradient(145deg, #fff, #fbf5e8);
+  padding: 0.7rem;
+}
+
+.donation-overview-card h3 {
+  margin: 0 0 0.35rem;
+  font-family: "League Spartan", sans-serif;
+  color: var(--teal);
+}
+
+.donation-overview-card p {
+  margin: 0 0 0.6rem;
+  font-size: 0.92rem;
+}
+
 form {
   display: grid;
   gap: 0.75rem;
@@ -462,6 +501,10 @@ footer {
   .upcoming-grid {
     grid-template-columns: 1fr;
   }
+
+  .donation-overview-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 640px) {
@@ -504,16 +547,16 @@ footer {
 
 .impact-shot img {
   width: 100%;
-  height: 240px;
+  height: clamp(180px, 30vw, 260px);
   object-fit: cover;
 }
 
 .impact-featured img {
-  height: 360px;
+  height: clamp(220px, 44vw, 360px);
 }
 
 .impact-shot-compact img {
-  height: 180px;
+  height: clamp(130px, 24vw, 180px);
   object-fit: contain;
   background: linear-gradient(145deg, #f8f3e8, #ffffff);
   padding: 0.75rem;
@@ -559,7 +602,7 @@ footer {
 
 .merch-item img {
   width: 100%;
-  height: 360px;
+  height: clamp(210px, 44vw, 360px);
   object-fit: contain;
   border-radius: 14px;
   margin-bottom: 0.9rem;
@@ -668,6 +711,40 @@ footer {
   margin: 0.45rem 0 0;
   color: rgba(31, 44, 47, 0.8);
   font-size: 0.86rem;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(244, 163, 64, 0.85);
+  outline-offset: 2px;
+}
+
+@media (max-width: 760px) {
+  .container {
+    width: min(1120px, 95vw);
+  }
+
+  .nav-wrap {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  nav ul {
+    justify-content: flex-start;
+    gap: 0.55rem;
+  }
+
+  .section {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-height: 700px) {
+  .hero {
+    padding: 2.4rem 0 1.8rem;
+  }
 }
 
 @media (max-width: 930px) {

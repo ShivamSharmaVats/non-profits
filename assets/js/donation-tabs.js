@@ -24,5 +24,14 @@
     });
   });
 
-  setActiveTab("lesson");
+  var hash = (window.location.hash || "").replace("#", "").toLowerCase();
+  if (hash === "custom" || hash === "custom-donation") {
+    setActiveTab("custom");
+  } else if (hash === "laptop") {
+    setActiveTab("laptop");
+  } else if (hash === "lesson") {
+    setActiveTab("lesson");
+  } else {
+    setActiveTab("lesson");
+  }
 })();
