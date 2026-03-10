@@ -30,55 +30,69 @@
     <p class="tag">Contact Us</p>
     <h1>Let’s Build the High Desert Digital Future Together</h1>
 
-    <div class="contact-grid">
-      <article class="card">
-        <h2>Contact Information</h2>
-        <p><strong>Email:</strong> hello@hddf.org</p>
-        <p><strong>Phone:</strong> (760) 555-0148</p>
-        <p><strong>Address:</strong> 1450 Desert Tech Way, Victorville, CA 92392</p>
-        <p><strong>Hours:</strong> Mon-Fri, 9:00 AM - 5:00 PM</p>
-      </article>
+    <article class="card">
+      <h2>Contact Information</h2>
+      <p><strong>Email:</strong> hello@hddf.org</p>
+      <p><strong>Phone:</strong> (760) 555-0148</p>
+      <p><strong>Address:</strong> 1450 Desert Tech Way, Victorville, CA 92392</p>
+      <p><strong>Hours:</strong> Mon-Fri, 9:00 AM - 5:00 PM</p>
+    </article>
 
-      <article class="card">
-        <h2>Donate Today</h2>
-        <div class="donation-tabs" role="tablist" aria-label="Donation options">
-          <button class="donation-tab active" type="button" role="tab" aria-selected="true" data-tab="lesson">Donate a Lesson</button>
-          <button class="donation-tab" type="button" role="tab" aria-selected="false" data-tab="laptop">Donate a Laptop</button>
-          <button class="donation-tab" type="button" role="tab" aria-selected="false" data-tab="custom">Custom Amount</button>
-        </div>
-
-        <div class="donation-panel active" data-panel="lesson" role="tabpanel">
-          <p>Want to fund one digital lesson that can help start someone’s career?</p>
-          <div class="donation-amounts">
-            <button class="button button-primary donation-pay" type="button" data-product="Career Lesson Donation" data-price="$25">$25 Lesson</button>
-            <button class="button button-secondary donation-pay" type="button" data-product="Career Lesson Pack Donation" data-price="$50">$50 Lesson Pack</button>
+    <section class="section">
+      <div class="donation-layout">
+        <article class="donation-story">
+          <div class="donation-story-copy">
+            <p class="tag">HDDF Community Impact</p>
+            <h2>Every Donation Builds Opportunity</h2>
+            <p>Your support helps provide laptops, digital lessons, and career coaching for students and families who need a real chance to move forward.</p>
+            <p>Whether you fund a lesson or sponsor a device, your contribution creates practical steps toward income, stability, and long-term growth in the High Desert.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="donation-panel" data-panel="laptop" role="tabpanel" hidden>
-          <p>Donate toward a refurbished laptop with fixed contribution options.</p>
-          <div class="donation-amounts">
-            <button class="button button-primary donation-pay" type="button" data-product="Half Laptop Donation" data-price="$150">$150 Half Laptop</button>
-            <button class="button button-secondary donation-pay" type="button" data-product="Full Laptop Donation" data-price="$300">$300 Full Laptop</button>
+        <article class="donation-widget" aria-label="Secure donation">
+          <h2>Secure Donation</h2>
+          <div class="donation-mode">
+            <button type="button" class="mode-btn active">Give once</button>
+            <button type="button" class="mode-btn">Monthly</button>
           </div>
-        </div>
 
-        <div class="donation-panel" data-panel="custom" role="tabpanel" hidden>
-          <p>Choose your own donation amount and help in the way that fits you best.</p>
+          <div class="donation-grid">
+            <button class="amount-btn donation-pay" type="button" data-product="Career Lesson Donation" data-price="$25">$25</button>
+            <button class="amount-btn donation-pay" type="button" data-product="Career Lesson Pack Donation" data-price="$50">$50</button>
+            <button class="amount-btn donation-pay" type="button" data-product="Laptop Support Donation" data-price="$100">$100</button>
+            <button class="amount-btn donation-pay" type="button" data-product="Half Laptop Donation" data-price="$150">$150</button>
+            <button class="amount-btn donation-pay" type="button" data-product="Laptop + Training Donation" data-price="$200">$200</button>
+            <button class="amount-btn donation-pay" type="button" data-product="Full Laptop Donation" data-price="$300">$300</button>
+          </div>
+
           <form class="donation-custom-form" id="donation-custom-form">
             <label for="custom-amount">Custom Donation Amount (USD)</label>
             <input id="custom-amount" name="custom_amount" type="number" min="1" step="1" placeholder="Enter amount" required />
             <button class="button button-primary" type="submit">Donate Custom Amount</button>
           </form>
-        </div>
-      </article>
-    </div>
+        </article>
+      </div>
+    </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container">
-      <strong>HDDF: High Desert Digital Future</strong><br />
-      Skills today. Income tomorrow.
+      <div class="footer-grid">
+        <div>
+          <strong class="footer-title">HDDF: High Desert Digital Future</strong>
+          <p class="footer-sub">Skills today. Income tomorrow.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="get-involved.html">Get Involved</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div>
+          <p><strong>Contact</strong><br />hello@hddf.org<br />(760) 555-0148<br />Victorville, CA</p>
+        </div>
+      </div>
+      <p class="footer-note">(c) 2026 HDDF. Community-powered digital opportunity in the High Desert.</p>
     </div>
   </footer>
   <div class="checkout-overlay" id="donation-checkout-overlay" hidden>
@@ -118,7 +132,6 @@
     </section>
   </div>
   <script src="assets/js/scroll-reveal.js"></script>
-  <script src="assets/js/donation-tabs.js"></script>
   <script src="assets/js/donation-checkout.js"></script>
 </body>
 </html>
